@@ -1,0 +1,22 @@
+#Katalogi z cache Pythona
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+#Śmieci z Pytesta
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+#Środowiska wirtualne
+
+venv/
+env/
+.env
+
+#Pliki systemowe
+
+.DS_Store
+Thumbs.db
