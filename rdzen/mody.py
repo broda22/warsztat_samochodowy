@@ -40,3 +40,19 @@ class Kierownik:
 
         return suma_cena, suma_czas
 
+class FabrykaSamochodow:
+    @staticmethod
+    def stworz_auto(nazwa: str, rejestracja: str, kuty: bool = False, zamontowane_mody: list = None ) ->Samochod:
+        if nazwa == "bmw e46":
+            return Samochod("bmw e46", "RWD", 186, kuty, rejestracja, zamontowane_mody)
+        elif nazwa == "bmw z4":
+            return Samochod("bmw z4", "RWD", 220, kuty, rejestracja, zamontowane_mody)
+        elif nazwa == "audi a5":
+            return Samochod("audi a5", "AWD", 230, kuty, rejestracja, zamontowane_mody)
+        elif nazwa == "opel insignia":
+            return Samochod("opel insignia", "AWD", 160, kuty, rejestracja, zamontowane_mody)
+        else:
+            print("nie mamy takiego auta w fabryce")
+            return None
+
+

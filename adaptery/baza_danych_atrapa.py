@@ -13,3 +13,9 @@ class UdawanaBazaWarsztatu(RepozytoriumWarsztatu):
         return baza_auto.get(rejestracja)
     def dopisz_mody(self,   mod: Modyfikacje):
         self.magazyn_modow.append(mod)
+    def usun_auto(self, rejestracja: str):
+        if rejestracja in self.baza_aut:
+            del self.baza_aut[rejestracja]
+            return True
+        else:
+            return False
